@@ -1,0 +1,560 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      div#container {
+        flex-direction: row;
+        justify-content: space-between;
+        display: flex;
+        margin: 30px;
+        align-items: center;
+      }
+      div#main {
+        flex-direction: row;
+        justify-content: space-between;
+        display: flex;
+        background-image: url("../../../../../react.png");
+        margin: 30px;
+        align-items: center;
+        background-color: #ffffff;
+      }
+      .container {
+        height: 474px;
+        width: 747px;
+        background-color: rgb(252, 248, 255);
+        /* position: relative; */
+      }
+      .container img {
+        /* position: absolute;
+            margin-top: 300px; */
+      }
+      div#cat {
+        flex-direction: row;
+        justify-content: space-between;
+        display: flex;
+        /* background-image: url('../../../../../react.png') ; Replace with your background image path */
+        margin: 30px;
+        align-items: center;
+        background-color: #ffffff;
+      }
+      /* #cat {
+            text-align: center;
+            margin: 20px;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+        } */
+      #background-container {
+        height: 389px;
+        width: 615px;
+        display: flex;
+        gap: 10px;
+        margin: 30px;
+        align-items: center;
+        justify-content: center;
+        background-image: url("../../../../../react.png"); /* Replace with your background image path */
+
+        /* margin: 0 auto; /* Center the container */
+      }
+      .contain {
+        height: 460px;
+        width: 450px;
+        border: 1px solid red;
+        background: linear-gradient(
+          135deg,
+          rgba(253, 254, 255, 0.6),
+          rgba(252, 254, 255, 0.6)
+        );
+        position: relative;
+        /* overflow: hidden; */
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      .contain::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        background: radial-gradient(
+          circle at top left,
+          rgba(255, 255, 255, 0.5),
+          rgba(0, 0, 255, 0) 70%
+        );
+        z-index: 1;
+      }
+      .contain img {
+        height: 378px;
+        width: 360px;
+        position: relative;
+        z-index: 2;
+      }
+
+      .imran {
+        display: flex;
+        height: 451px;
+        width: 1440px;
+        margin-top: 30px;
+        border-radius: 0px, 0px, 20px, 20px;
+        margin: 32px;
+        /* border: 1px solid red; */
+      }
+      .text-part {
+        flex: 1;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 411px;
+
+        margin-left: 30px;
+        width: 612px;
+        background-color: #7757f4;
+        border-radius: 20px, 0px, 0px, opx;
+      }
+      .image-part {
+        flex: 1;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 411px;
+        width: 660px;
+      }
+      .image-part img {
+        height: 411px;
+        width: 620px;
+      }
+      .imo {
+        height: 70px;
+        width: 1370px;
+        border: 1px #a089f7 solid;
+        margin: 60px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        /* padding: 10px; */
+        /* box-sizing: border-box; */
+      }
+      .game {
+        display: flex;
+        align-items: center;
+        flex-direction: row;
+        justify-content: space-between;
+        height: 660px;
+        /* background-image: url('../../../../../ring.png'); Replace with your image background path */
+
+        /* background-image: url('../../../../../diam.png'); */
+        width: 1234px;
+
+        margin: 30px;
+        margin-top: 50px;
+      }
+
+      .ga {
+        display: flex;
+        align-items: center;
+        flex-direction: row;
+        justify-content: space-between;
+        height: 360px;
+        background-image: url("../../../../../ring.png");
+
+        background-image: url("../../../../../diam.png");
+        width: 534px;
+
+        margin: 30px;
+        margin-top: 50px;
+      }
+      .slider-container {
+            
+            height: 623px;
+            width: 1520px;
+            margin:30px ;
+            background-color: 
+
+#FAFAFA;
+            ;
+        }
+
+        .slider {
+            display: flex;
+            /* flex-wrap: nowrap; Ensure images are in a single row */
+            /* transition: transform 0.5s ease; Smooth transition */
+        }
+
+        .slider img {
+            /* margin-right: 10px; Add some spacing between images */
+        }
+
+        .slider-container h1 {
+            text-align: center;
+            font-size: 38px;
+            font-weight: 700;
+        }
+    </style>
+  </head>
+  <body>
+    <div id="container">
+      <div style="height: 50px; width: 50px;border-radius: 5px; background-color: #7757f4"></div>
+      <span
+        style="
+          margin-right: 960px;
+          font-size: 24;
+          font-weight: 700;
+          color: #404040;
+        "
+      >
+        Resume.AI</span
+      >
+      <div>
+        <button
+          style="
+            padding: 14px;
+            border: 1px #7757f4 solid;
+            color: #7757f4;
+            font-size: 16px;
+            font-weight: 500;
+          "
+        >
+          Sign in
+        </button>
+        <button
+          style="
+            height: 50px;
+            width: 200px;
+            border: 1px #7757f4 solid;
+            background-color: #7757f4;
+            font-size: 16px;
+            color: #ffffff;
+            border-radius: 9px;
+            font-weight: 500;
+          "
+        >
+          Create my resume
+        </button>
+      </div>
+    </div>
+    <div style="height: 1px; background-color: #ffcd42; width: 100%"></div>
+    <div id="main">
+      <div
+        style="
+          height: 243px;
+          width: 549px;
+          background-color: rgb(247, 250, 251);
+          border-radius: 9px;
+        "
+      >
+        <div
+          style="
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+            display: flex;
+          "
+        >
+          <span style="font-size: 48px; font-weight: 400; color: #171717"
+            >Welcome to</span
+          >
+          <span style="font-size: 48px; font-weight: 400; color: #7757f4"
+            >Ai Resume</span
+          >
+        </div>
+        <div
+          style="
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+            display: flex;
+          "
+        >
+          <span style="font-size: 48px; font-weight: 400; color: #7757f4"
+            >Maker !</span
+          >
+          <span style="font-size: 48px; font-weight: 400; color: black"
+            >Your path to</span
+          >
+        </div>
+        <div
+          style="
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+            display: flex;
+          "
+        >
+          <span style="font-size: 48px; font-weight: 400; color: black"
+            >professional success !</span
+          >
+        </div>
+        <button
+          style="
+            height: 50px;
+            width: 130px;
+            background-color: #947dfa;
+            /* margin: 40px; */
+            margin-left: 50px;
+            margin-top: 10px;
+            color: #ffffff;
+            border-radius: 8px;
+          "
+        >
+          Start building
+        </button>
+      </div>
+      <div class="container">
+        <img src="../../../../../ring.png" alt="Ring Image" />
+        <img
+          src="../../../../../cv.png"
+          alt="CV Image"
+          style="margin-top: -400px; margin-left: 30px"
+        />
+      </div>
+    </div>
+    <h1 style="margin: 30px; margin-top: 50px">Why choose AI resume maker?</h1>
+    <div id="cat">
+      <div id="background-container">
+        <!-- Background image will be here -->
+        <img
+          style="height: 185px; width: 130px"
+          src="../../../../../temp.png"
+          alt="Image 1"
+        />
+        <img
+          style="height: 321px; width: 223px"
+          src="../../../../../temo.png"
+          alt="Image 2"
+        />
+        <img src="../../../../../diam.png" alt="Image 3" />
+      </div>
+      <div class="contain">
+        <img src="../../../../../gro.png" alt="Image 1" />
+      </div>
+    </div>
+    <div class="imran">
+      <div class="text-part">
+        <div style="flex-direction: column; margin: 50px">
+          <h1 style="font-size: 38px; font-weight: 700; color: #ffffff">
+            Intelligent Guidance
+          </h1>
+          <p style="font-size: 20px; font-weight: 400; color: #ffffff">
+            Our AI-powered platform provides step-by-step guidance as you build
+            your resume. From selecting the right template to tailoring content,
+            our AI ensures your resume reflects your unique strengths.
+          </p>
+          <button
+            style="
+              height: 40px;
+              width: 80px;
+              background-color: white;
+              color: #7757f4;
+              border: 1px #7757f4 solid;
+              border-radius: 7px;
+            "
+          >
+            Try now
+          </button>
+        </div>
+      </div>
+      <div class="image-part">
+        <img src="../../../../../cute.png" alt="Image 1" />
+      </div>
+    </div>
+    <div class="imo">
+      <div style="display: flex; align-items: center">
+        <div
+          style="
+            height: 60px;
+            width: 60px;
+            border-radius: 9px;
+            background-color: white;
+            border-radius: 1 px light grey solid;
+            margin: 20px;
+          "
+        >
+          <img style="margin: 10px" src="../../../../../Vector.png" alt="" />
+        </div>
+        <p style="">Step by step guidance</p>
+      </div>
+      <div style="display: flex; align-items: center">
+        <div
+          style="
+            height: 60px;
+            width: 60px;
+            border-radius: 9px;
+            background-color: white;
+            border-radius: 1 px light grey solid;
+            margin: 20px;
+          "
+        >
+          <img style="margin: 10px" src="../../../../../Vector.png" alt="" />
+        </div>
+        <p style="">Step by step guidance</p>
+      </div>
+      <div style="display: flex; align-items: center">
+        <div
+          style="
+            height: 60px;
+            width: 60px;
+            border-radius: 9px;
+            background-color: white;
+            border-radius: 1 px light grey solid;
+            margin: 20px;
+          "
+        >
+          <img style="margin: 10px" src="../../../../../Vector.png" alt="" />
+        </div>
+        <p>Realtime resume preview</p>
+      </div>
+    </div>
+
+    <div class="game">
+      <div class="ga">
+        <div class="image">
+          <img src="../../../../../book.png" alt="Image" />
+        </div>
+      </div>
+      <img style="margin-right: 100px" src="../../../../../yell.png" alt="" />
+      <div
+        style="
+          flex-direction: column;
+          align-items: center;
+          justify-content: center;
+          height: 200px;
+          width: 500px;
+          display: flex;
+        "
+      >
+        <h1 style="font-size: 38px; font-weight: 700">
+          User-Friendly Interface
+        </h1>
+        <p style="font-size: 20px; font-size: 400">
+          No more struggling with complex formatting tools. Our intuitive
+          interface makes it easy to enter your information, choose from a
+          variety of templates, and customize your resume effortlessly.
+        </p>
+      </div>
+    </div>
+
+    <div class="slider-container">
+        <h1>Explore the library</h1>
+        <div class="slider">
+            <img src="../../../../../mam.png" alt="Image 1">
+            <img src="../../../../../mam.png" alt="Image 2">
+            <img src="../../../../../mam.png" alt="Image 3">
+            <img src="../../../../../mam.png" alt="Image 4">
+            <img src="../../../../../mam.png" alt="Image 5">
+            <img src="../../../../../mam.png" alt="Image 6">
+        </div>
+    </div>
+
+    <script>
+        // JavaScript code for carousel functionality (optional)
+        const slider = document.querySelector('.slider');
+        let isMoving = false;
+        let startPosition = 0;
+        let currentTranslate = 0;
+
+        slider.addEventListener('mousedown', (e) => {
+            isMoving = true;
+            startPosition = e.pageX - slider.offsetLeft;
+            currentTranslate = window.getComputedStyle(slider).getPropertyValue('transform').split(',')[4];
+            currentTranslate = currentTranslate ? parseInt(currentTranslate.trim()) : 0;
+        });
+
+        slider.addEventListener('mousemove', (e) => {
+            if (!isMoving) return;
+            const currentPosition = e.pageX - slider.offsetLeft;
+            const translate = currentPosition - startPosition + currentTranslate;
+            slider.style.transform = `translateX(${translate}px)`;
+        });
+
+        window.addEventListener('mouseup', () => {
+            isMoving = false;
+        });
+    </script>
+    <div
+      style="
+        height: 392px;
+        width: 1440px;
+        background-color: #ebe6fd;
+        margin: 32px;
+        align-items: center;
+        justify-content: center;
+      "
+    >
+      <div
+        style="
+          height: 182px;
+          width: 1126;
+          align-items: center;
+          justify-content: center;
+          display: flex;
+          margin-top: 50px;
+          flex-direction: column;
+        "
+      >
+        <h1
+          style="
+            font-size: 38px;
+            font-weight: 700;
+            color: #404040;
+            margin-top: 240px;
+          "
+        >
+          Join the AI-Powered Revolution
+        </h1>
+        <h1
+          style="
+            font-size: 38px;
+            font-weight: 700;
+            color: #404040;
+
+            margin-top: 30px;
+          "
+        >
+          in Resume Building
+        </h1>
+        <p
+          style="
+            font-size: 20px;
+            font-weight: 400;
+            color: #525252;
+            margin-top: 10px;
+            padding: 0;
+          "
+        >
+          Creating an outstanding resume has never been this effortless. With AI
+          Resume Maker, you're not just crafting a
+        </p>
+        <p
+          style="
+            font-size: 20px;
+            font-weight: 400;
+            color: #525252;
+            margin: 0;
+            padding: 0;
+          "
+        >
+          document—you're shaping your professional future.
+        </p>
+
+        <button
+          style="
+            padding: 10px;
+            border: 1px solid grey;
+            border-radius: 9px;
+            margin-top: 30px;
+            color: #404040;
+          "
+        >
+          Get started today
+        </button>
+      </div>
+    </div>
+  </body>
+</html>
